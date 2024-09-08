@@ -1,0 +1,2115 @@
+  subject_id  hadm_id           admittime           dischtime deathtime
+1   10000980 26913865 2189-06-27 07:38:00 2189-07-03 03:00:00        NA
+2   10002013 23581541 2160-05-18 07:45:00 2160-05-23 13:30:00        NA
+3   10002428 23473524 2156-05-11 14:49:00 2156-05-22 14:16:00        NA
+4   10002430 26295318 2129-06-13 00:00:00 2129-06-24 16:01:00        NA
+5   10002495 24982426 2141-05-22 20:17:00 2141-05-29 17:41:00        NA
+6   10002760 28094813 2141-04-20 07:15:00 2141-04-24 13:31:00        NA
+  insurance language marital_status  race              intime
+1  Medicare  ENGLISH        MARRIED Black 2189-06-27 08:42:00
+2  Medicare  ENGLISH         SINGLE Other 2160-05-18 10:00:53
+3  Medicare  ENGLISH        WIDOWED White 2156-05-11 14:49:34
+4  Medicare  ENGLISH        WIDOWED White 2129-06-13 00:43:08
+5  Medicare  ENGLISH        MARRIED Other 2141-05-22 20:18:01
+6     Other  ENGLISH                Other 2141-04-20 13:20:46
+              outtime        los gender anchor_age anchor_year
+1 2189-06-27 20:38:27  0.4975347      F         73        2186
+2 2160-05-19 17:33:33  1.3143519      F         53        2156
+3 2156-05-22 14:16:46 10.9772222      F         80        2155
+4 2129-06-15 22:51:40  2.9225926      M         86        2125
+5 2141-05-27 22:24:02  5.0875116      M         81        2141
+6 2141-04-21 14:26:49  1.0458681      M         56        2141
+  anchor_year_group        dod dischtime_since_admission dod_since_disch
+1       2008 - 2010 2193-08-26                  5.806944       1514.8750
+2       2008 - 2010                             5.239583              NA
+3       2011 - 2013                            10.977083              NA
+4       2014 - 2016 2130-01-11                 11.667361        200.3326
+5       2014 - 2016                             6.891667              NA
+6       2008 - 2010                             4.261111              NA
+  censoring_time has_type1_diabetes has_type2_diabetes has_hypertension
+1            365              False               True            False
+2            365              False               True             True
+3            365              False              False             True
+4            365              False              False             True
+5            365              False              False             True
+6            365              False              False            False
+  has_atrial_fibrillation has_copd has_asthma has_liver_disease
+1                   False     True      False             False
+2                   False     True      False             False
+3                   False    False      False             False
+4                   False    False      False             False
+5                   False    False      False             False
+6                   False    False      False             False
+  has_chronic_kidney_disease has_cancer has_depression has_osteoarthritis
+1                      False      False          False              False
+2                      False      False           True              False
+3                      False      False          False              False
+4                      False      False          False              False
+5                      False      False          False              False
+6                      False      False          False              False
+  has_anemia prev_HF Enalapril Lisinopril Ramipril Carvedilol
+1      False   False     False       True    False       True
+2      False   False     False       True    False      False
+3      False   False     False       True    False      False
+4      False   False     False      False    False      False
+5      False   False     False      False    False      False
+6      False   False     False      False    False      False
+  Metoprolol.Succinate Bisoprolol Furosemide Bumetanide Spironolactone Warfarin
+1                False      False       True      False          False     True
+2                False      False       True      False          False    False
+3                False      False       True      False          False    False
+4                False      False       True      False           True    False
+5                False      False       True      False          False     True
+6                False      False       True      False          False     True
+  Apixaban Rivaroxaban ACE.Inhibitor Beta.Blocker Diuretic Anticoagulant
+1    False       False          True         True     True          True
+2    False       False          True        False     True         False
+3    False       False          True        False     True         False
+4     True       False         False        False     True          True
+5    False       False         False        False     True          True
+6    False       False         False        False     True          True
+ [1] "subject_id"                 "hadm_id"                   
+ [3] "admittime"                  "dischtime"                 
+ [5] "deathtime"                  "insurance"                 
+ [7] "language"                   "marital_status"            
+ [9] "race"                       "intime"                    
+[11] "outtime"                    "los"                       
+[13] "gender"                     "anchor_age"                
+[15] "anchor_year"                "anchor_year_group"         
+[17] "dod"                        "dischtime_since_admission" 
+[19] "dod_since_disch"            "censoring_time"            
+[21] "has_type1_diabetes"         "has_type2_diabetes"        
+[23] "has_hypertension"           "has_atrial_fibrillation"   
+[25] "has_copd"                   "has_asthma"                
+[27] "has_liver_disease"          "has_chronic_kidney_disease"
+[29] "has_cancer"                 "has_depression"            
+[31] "has_osteoarthritis"         "has_anemia"                
+[33] "prev_HF"                    "Enalapril"                 
+[35] "Lisinopril"                 "Ramipril"                  
+[37] "Carvedilol"                 "Metoprolol.Succinate"      
+[39] "Bisoprolol"                 "Furosemide"                
+[41] "Bumetanide"                 "Spironolactone"            
+[43] "Warfarin"                   "Apixaban"                  
+[45] "Rivaroxaban"                "ACE.Inhibitor"             
+[47] "Beta.Blocker"               "Diuretic"                  
+[49] "Anticoagulant"             
+ [1] "insurance"                  "language"                  
+ [3] "marital_status"             "los"                       
+ [5] "gender"                     "anchor_age"                
+ [7] "race"                       "has_type1_diabetes"        
+ [9] "has_type2_diabetes"         "has_hypertension"          
+[11] "has_atrial_fibrillation"    "has_copd"                  
+[13] "has_asthma"                 "has_liver_disease"         
+[15] "has_chronic_kidney_disease" "has_cancer"                
+[17] "has_depression"             "has_anemia"                
+[19] "prev_HF"                    "ACE.Inhibitor"             
+[21] "Beta.Blocker"               "Diuretic"                  
+[23] "Anticoagulant"             
+[1] 0.2665642
+[1] "Iteration:1"
+Compute the result of Cox...[1] 100
+[1] 200
+[1] 300
+[1] 400
+[1] 500
+[1] 600
+[1] 700
+[1] 800
+[1] 900
+[1] 1000
+[1] 1100
+[1] 1200
+[1] 1300
+[1] 1400
+[1] 1500
+[1] 1600
+[1] 1700
+[1] 1800
+[1] 1900
+[1] 2000
+[1] 2100
+[1] 2200
+[1] 2300
+[1] 2400
+[1] 2500
+[1] 2600
+[1] 2700
+[1] 2800
+[1] 2900
+[1] 3000
+[1] 3100
+[1] 3200
+[1] 3300
+[1] 3400
+[1] 3500
+[1] 3600
+[1] 3700
+Done.
+Compute the result of AFT...Done.
+Compute the result of powell...Done.
+Compute the result of portnoy...Done.
+Compute the result of Peng and Huang...Done.
+Compute the result of random forest...[1] "checkpoint1"
+[1] "r =  100"
+[1] "r =  200"
+[1] "r =  300"
+[1] "r =  400"
+[1] "r =  500"
+[1] "r =  600"
+[1] "r =  700"
+[1] "r =  800"
+[1] "r =  900"
+[1] "r =  1000"
+[1] "r =  1100"
+[1] "r =  1200"
+[1] "r =  1300"
+[1] "r =  1400"
+[1] "r =  1500"
+[1] "r =  1600"
+[1] "r =  1700"
+[1] "r =  1800"
+[1] "r =  1900"
+[1] "r =  2000"
+[1] "r =  2100"
+[1] "r =  2200"
+[1] "r =  2300"
+[1] "r =  2400"
+[1] "r =  2500"
+[1] "r =  2600"
+[1] "r =  2700"
+[1] "r =  2800"
+[1] "r =  2900"
+[1] "r =  3000"
+[1] "r =  3100"
+[1] "r =  3200"
+[1] "r =  3300"
+[1] "r =  3400"
+[1] "r =  3500"
+[1] "r =  3600"
+[1] "r =  3700"
+[1] "checkpoint3"
+Done.
+Installing packages into ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘sass’, ‘cachem’, ‘prettyunits’, ‘processx’, ‘highr’, ‘bslib’, ‘fontawesome’, ‘jquerylib’, ‘tinytex’, ‘farver’, ‘labeling’, ‘munsell’, ‘fansi’, ‘stringi’, ‘htmltools’, ‘htmlwidgets’, ‘igraph’, ‘visNetwork’, ‘backports’, ‘generics’, ‘memoise’, ‘blob’, ‘DBI’, ‘tidyselect’, ‘gargle’, ‘uuid’, ‘cellranger’, ‘curl’, ‘ids’, ‘rematch2’, ‘cpp11’, ‘openssl’, ‘timechange’, ‘systemfonts’, ‘textshaping’, ‘vroom’, ‘tzdb’, ‘progress’, ‘callr’, ‘fs’, ‘knitr’, ‘rmarkdown’, ‘selectr’, ‘minqa’, ‘cli’, ‘gtable’, ‘lifecycle’, ‘rlang’, ‘scales’, ‘tibble’, ‘vctrs’, ‘withr’, ‘RColorBrewer’, ‘data.tree’, ‘DiagrammeR’, ‘broom’, ‘conflicted’, ‘dbplyr’, ‘dplyr’, ‘dtplyr’, ‘forcats’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘hms’, ‘httr’, ‘jsonlite’, ‘lubridate’, ‘magrittr’, ‘modelr’, ‘pillar’, ‘purrr’, ‘ragg’, ‘readr’, ‘readxl’, ‘reprex’, ‘rstudioapi’, ‘rvest’, ‘stringr’, ‘tidyr’, ‘xml2’, ‘data.table’, ‘lme4’, ‘bootstrap’, ‘numDeriv’, ‘TMB’, ‘R6’, ‘lbfgs’, ‘RcppArmadillo’
+
+trying URL 'http://cran.us.r-project.org/src/contrib/sass_0.4.9.tar.gz'
+Content type 'application/x-gzip' length 3025086 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cachem_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 27192 bytes (26 KB)
+==================================================
+downloaded 26 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/prettyunits_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 97496 bytes (95 KB)
+==================================================
+downloaded 95 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/processx_3.8.4.tar.gz'
+Content type 'application/x-gzip' length 163983 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/highr_0.11.tar.gz'
+Content type 'application/x-gzip' length 13851 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/bslib_0.7.0.tar.gz'
+Content type 'application/x-gzip' length 5125401 bytes (4.9 MB)
+==================================================
+downloaded 4.9 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/fontawesome_0.5.2.tar.gz'
+Content type 'application/x-gzip' length 1281884 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/jquerylib_0.1.4.tar.gz'
+Content type 'application/x-gzip' length 520207 bytes (508 KB)
+==================================================
+downloaded 508 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tinytex_0.51.tar.gz'
+Content type 'application/x-gzip' length 34491 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/farver_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 1275981 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/labeling_0.4.3.tar.gz'
+Content type 'application/x-gzip' length 10167 bytes
+==================================================
+downloaded 10167 bytes
+
+trying URL 'http://cran.us.r-project.org/src/contrib/munsell_0.5.1.tar.gz'
+Content type 'application/x-gzip' length 182310 bytes (178 KB)
+==================================================
+downloaded 178 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/fansi_1.0.6.tar.gz'
+Content type 'application/x-gzip' length 482480 bytes (471 KB)
+==================================================
+downloaded 471 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/stringi_1.8.4.tar.gz'
+Content type 'application/x-gzip' length 11917497 bytes (11.4 MB)
+==================================================
+downloaded 11.4 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/htmltools_0.5.8.1.tar.gz'
+Content type 'application/x-gzip' length 135134 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/htmlwidgets_1.6.4.tar.gz'
+Content type 'application/x-gzip' length 868895 bytes (848 KB)
+==================================================
+downloaded 848 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/igraph_2.0.3.tar.gz'
+Content type 'application/x-gzip' length 4967875 bytes (4.7 MB)
+==================================================
+downloaded 4.7 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/visNetwork_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 4273723 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/backports_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 30687 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/generics_0.1.3.tar.gz'
+Content type 'application/x-gzip' length 172201 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/memoise_2.0.1.tar.gz'
+Content type 'application/x-gzip' length 17852 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/blob_1.2.4.tar.gz'
+Content type 'application/x-gzip' length 10620 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/DBI_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 1137307 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tidyselect_1.2.1.tar.gz'
+Content type 'application/x-gzip' length 103591 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/gargle_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 627560 bytes (612 KB)
+==================================================
+downloaded 612 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/uuid_1.2-0.tar.gz'
+Content type 'application/x-gzip' length 79715 bytes (77 KB)
+==================================================
+downloaded 77 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cellranger_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 63857 bytes (62 KB)
+==================================================
+downloaded 62 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/curl_5.2.1.tar.gz'
+Content type 'application/x-gzip' length 716695 bytes (699 KB)
+==================================================
+downloaded 699 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/ids_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 91213 bytes (89 KB)
+==================================================
+downloaded 89 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rematch2_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 13366 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cpp11_0.4.7.tar.gz'
+Content type 'application/x-gzip' length 285779 bytes (279 KB)
+==================================================
+downloaded 279 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/openssl_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 1207404 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/timechange_0.3.0.tar.gz'
+Content type 'application/x-gzip' length 103439 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/systemfonts_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 85584 bytes (83 KB)
+==================================================
+downloaded 83 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/textshaping_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 37960 bytes (37 KB)
+==================================================
+downloaded 37 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/vroom_1.6.5.tar.gz'
+Content type 'application/x-gzip' length 750416 bytes (732 KB)
+==================================================
+downloaded 732 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 586327 bytes (572 KB)
+==================================================
+downloaded 572 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/progress_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 30499 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/callr_3.7.6.tar.gz'
+Content type 'application/x-gzip' length 104358 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/fs_1.6.4.tar.gz'
+Content type 'application/x-gzip' length 1201506 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/knitr_1.48.tar.gz'
+Content type 'application/x-gzip' length 583007 bytes (569 KB)
+==================================================
+downloaded 569 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rmarkdown_2.27.tar.gz'
+Content type 'application/x-gzip' length 2190416 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'application/x-gzip' length 41371 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/minqa_1.2.7.tar.gz'
+Content type 'application/x-gzip' length 54344 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cli_3.6.3.tar.gz'
+Content type 'application/x-gzip' length 568162 bytes (554 KB)
+==================================================
+downloaded 554 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/gtable_0.3.5.tar.gz'
+Content type 'application/x-gzip' length 130227 bytes (127 KB)
+==================================================
+downloaded 127 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lifecycle_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 107656 bytes (105 KB)
+==================================================
+downloaded 105 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rlang_1.1.4.tar.gz'
+Content type 'application/x-gzip' length 767041 bytes (749 KB)
+==================================================
+downloaded 749 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/scales_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 302544 bytes (295 KB)
+==================================================
+downloaded 295 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tibble_3.2.1.tar.gz'
+Content type 'application/x-gzip' length 565982 bytes (552 KB)
+==================================================
+downloaded 552 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/vctrs_0.6.5.tar.gz'
+Content type 'application/x-gzip' length 969066 bytes (946 KB)
+==================================================
+downloaded 946 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/withr_3.0.0.tar.gz'
+Content type 'application/x-gzip' length 107677 bytes (105 KB)
+==================================================
+downloaded 105 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/RColorBrewer_1.1-3.tar.gz'
+Content type 'application/x-gzip' length 11638 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/data.tree_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 1629152 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/DiagrammeR_1.0.11.tar.gz'
+Content type 'application/x-gzip' length 1238722 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/broom_1.0.6.tar.gz'
+Content type 'application/x-gzip' length 641538 bytes (626 KB)
+==================================================
+downloaded 626 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/conflicted_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 17071 bytes (16 KB)
+==================================================
+downloaded 16 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/dbplyr_2.5.0.tar.gz'
+Content type 'application/x-gzip' length 770647 bytes (752 KB)
+==================================================
+downloaded 752 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/dplyr_1.1.4.tar.gz'
+Content type 'application/x-gzip' length 1207521 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/dtplyr_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 150971 bytes (147 KB)
+==================================================
+downloaded 147 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 294183 bytes (287 KB)
+==================================================
+downloaded 287 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/googledrive_2.1.1.tar.gz'
+Content type 'application/x-gzip' length 1609266 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/googlesheets4_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 232584 bytes (227 KB)
+==================================================
+downloaded 227 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/haven_2.5.4.tar.gz'
+Content type 'application/x-gzip' length 313332 bytes (305 KB)
+==================================================
+downloaded 305 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/hms_1.1.3.tar.gz'
+Content type 'application/x-gzip' length 43379 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/httr_1.4.7.tar.gz'
+Content type 'application/x-gzip' length 118500 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/jsonlite_1.8.8.tar.gz'
+Content type 'application/x-gzip' length 1053028 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'application/x-gzip' length 428043 bytes (418 KB)
+==================================================
+downloaded 418 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/magrittr_2.0.3.tar.gz'
+Content type 'application/x-gzip' length 267074 bytes (260 KB)
+==================================================
+downloaded 260 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/modelr_0.1.11.tar.gz'
+Content type 'application/x-gzip' length 121480 bytes (118 KB)
+==================================================
+downloaded 118 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/pillar_1.9.0.tar.gz'
+Content type 'application/x-gzip' length 444528 bytes (434 KB)
+==================================================
+downloaded 434 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/purrr_1.0.2.tar.gz'
+Content type 'application/x-gzip' length 220868 bytes (215 KB)
+==================================================
+downloaded 215 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/ragg_1.3.2.tar.gz'
+Content type 'application/x-gzip' length 430366 bytes (420 KB)
+==================================================
+downloaded 420 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/readr_2.1.5.tar.gz'
+Content type 'application/x-gzip' length 298065 bytes (291 KB)
+==================================================
+downloaded 291 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/readxl_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 2093488 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/reprex_2.1.1.tar.gz'
+Content type 'application/x-gzip' length 1089023 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rstudioapi_0.16.0.tar.gz'
+Content type 'application/x-gzip' length 117418 bytes (114 KB)
+==================================================
+downloaded 114 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rvest_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 115876 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/stringr_1.5.1.tar.gz'
+Content type 'application/x-gzip' length 176599 bytes (172 KB)
+==================================================
+downloaded 172 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tidyr_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 809058 bytes (790 KB)
+==================================================
+downloaded 790 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/xml2_1.3.6.tar.gz'
+Content type 'application/x-gzip' length 294715 bytes (287 KB)
+==================================================
+downloaded 287 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/data.table_1.15.4.tar.gz'
+Content type 'application/x-gzip' length 5387593 bytes (5.1 MB)
+==================================================
+downloaded 5.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lme4_1.1-35.5.tar.gz'
+Content type 'application/x-gzip' length 3300116 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/bootstrap_2019.6.tar.gz'
+Content type 'application/x-gzip' length 30791 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'application/x-gzip' length 76053 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/TMB_1.9.14.tar.gz'
+Content type 'application/x-gzip' length 759301 bytes (741 KB)
+==================================================
+downloaded 741 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/R6_2.5.1.tar.gz'
+Content type 'application/x-gzip' length 63422 bytes (61 KB)
+==================================================
+downloaded 61 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lbfgs_1.2.1.2.tar.gz'
+Content type 'application/x-gzip' length 2232568 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/RcppArmadillo_0.12.8.4.0.tar.gz'
+Content type 'application/x-gzip' length 1406640 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/ggplot2_3.5.1.tar.gz'
+Content type 'application/x-gzip' length 3604371 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/quantregForest_1.3-7.tar.gz'
+Content type 'application/x-gzip' length 43617 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/randomForestSRC_3.3.0.tar.gz'
+Content type 'application/x-gzip' length 1329920 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tidyverse_2.0.0.tar.gz'
+Content type 'application/x-gzip' length 704618 bytes (688 KB)
+==================================================
+downloaded 688 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/fishmethods_1.12-1.tar.gz'
+Content type 'application/x-gzip' length 268741 bytes (262 KB)
+==================================================
+downloaded 262 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/doParallel_1.0.17.tar.gz'
+Content type 'application/x-gzip' length 164254 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/GauPro_0.2.12.tar.gz'
+Content type 'application/x-gzip' length 662125 bytes (646 KB)
+==================================================
+downloaded 646 KB
+
+* installing *source* package ‘prettyunits’ ...
+** package ‘prettyunits’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (prettyunits)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-highr’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-tinytex’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-farver’
+* installing *source* package ‘labeling’ ...
+** package ‘labeling’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (labeling)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-munsell’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-fansi’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-stringi’
+* installing *source* package ‘backports’ ...
+** package ‘backports’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c dotsElt.c -o dotsElt.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c dotsLength.c -o dotsLength.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c dotsNames.c -o dotsNames.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c init.c -o init.o
+/usr/local/gcc-12.2.0/bin/gcc -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o backports.so dotsElt.o dotsLength.o dotsNames.o init.o -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-backports/00new/backports/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (backports)
+* installing *source* package ‘generics’ ...
+** package ‘generics’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (generics)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-DBI’
+* installing *source* package ‘uuid’ ...
+** package ‘uuid’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... /usr/local/gcc-12.2.0/bin/gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /usr/local/gcc-12.2.0/bin/gcc accepts -g... yes
+checking for /usr/local/gcc-12.2.0/bin/gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for grp.h... yes
+checking for langinfo.h... yes
+checking for locale.h... yes
+checking for netinet/in.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/socket.h... yes
+checking for sys/sockio.h... no
+checking for sys/syscall.h... yes
+checking for sys/sendfile.h... yes
+checking for sys/time.h... yes
+checking for sys/un.h... yes
+checking for unistd.h... (cached) yes
+checking for net/if.h... yes
+checking for net/if_dl.h... no
+checking for dirfd... yes
+checking for err... yes
+checking for errx... yes
+checking for getexecname... no
+checking for getrandom... yes
+checking for jrand48... yes
+checking for llseek... no
+checking for lchown... yes
+checking for mempcpy... yes
+checking for mkostemp... yes
+checking for nanosleep... yes
+checking for sendfile... yes
+checking for srandom... yes
+checking for strnchr... no
+checking for strndup... yes
+checking for strnlen... yes
+checking for usleep... yes
+checking for warn... yes
+checking for warnx... yes
+checking for flock... yes
+checking for struct sockaddr.sa_len... no
+checking for dlfcn.h... yes
+checking for library containing dlsym... -ldl
+checking for thread local storage (TLS) support... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/config.h
+** libs
+using C compiler: ‘gcc (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c R.c -o R.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c Ruuid.c -o Ruuid.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c clear.c -o clear.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c compare.c -o compare.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c copy.c -o copy.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c gen_uuid.c -o gen_uuid.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c isnull.c -o isnull.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c md5.c -o md5.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c pack.c -o pack.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c parse.c -o parse.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c rand.c -o rand.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c randutils.c -o randutils.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c sha1.c -o sha1.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c unpack.c -o unpack.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c unparse.c -o unparse.o
+/usr/local/gcc-12.2.0/bin/gcc -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o uuid.so R.o Ruuid.o clear.o compare.o copy.o gen_uuid.o isnull.o md5.o pack.o parse.o rand.o randutils.o sha1.o unpack.o unparse.o -ldl -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-uuid/00new/uuid/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (uuid)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-curl’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-cpp11’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-openssl’
+* installing *source* package ‘fs’ ...
+** package ‘fs’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c init.cc -o init.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c id.cc -o id.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c file.cc -o file.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c path.cc -o path.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c fs.cc -o fs.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c link.cc -o link.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c utils.cc -o utils.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c dir.cc -o dir.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c getmode.cc -o getmode.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c error.cc -o error.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c unix/getmode.cc -o unix/getmode.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2  -c bsd/setmode.c -o bsd/setmode.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2  -c bsd/strmode.c -o bsd/strmode.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2  -c bsd/reallocarray.c -o bsd/reallocarray.o
+(cd libuv-1.44.2 \
+&& CC="/usr/local/gcc-12.2.0/bin/gcc" CPPFLAGS="-I/usr/local/include" CFLAGS="-g -O2  -fpic -fvisibility=hidden -std=c99" AR="ar" RANLIB="ranlib" LDFLAGS="-L/usr/local/lib64" ./configure  --quiet)
+make --directory=libuv-1.44.2 \
+	HAVE_DTRACE=0
+make[1]: Entering directory '/mnt/tmp/471736.124.short.q/RtmpJJ1fSC/R.INSTALL225c94882ec/fs/src/libuv-1.44.2'
+  CC       src/libuv_la-fs-poll.lo
+  CC       src/libuv_la-idna.lo
+  CC       src/libuv_la-inet.lo
+  CC       src/libuv_la-random.lo
+  CC       src/libuv_la-strscpy.lo
+  CC       src/libuv_la-threadpool.lo
+  CC       src/libuv_la-timer.lo
+  CC       src/libuv_la-uv-data-getter-setters.lo
+  CC       src/libuv_la-uv-common.lo
+In file included from src/uv-common.h:42,
+                 from src/uv-common.c:23:
+src/uv-common.c: In function 'uv_walk':
+src/queue.h:68:19: warning: storing the address of local variable 'queue' in '((void * (**)[2])MEM[(void *[2] * *)loop_13(D) + 16B])[1]' [-Wdangling-pointer=]
+   68 |     QUEUE_PREV(q) = (n);                                                      \
+      |                   ^
+src/queue.h:78:7: note: in expansion of macro 'QUEUE_SPLIT'
+   78 |       QUEUE_SPLIT(h, q, n);                                                   \
+      |       ^~~~~~~~~~~
+src/uv-common.c:507:3: note: in expansion of macro 'QUEUE_MOVE'
+  507 |   QUEUE_MOVE(&loop->handle_queue, &queue);
+      |   ^~~~~~~~~~
+src/uv-common.c:503:9: note: 'queue' declared here
+  503 |   QUEUE queue;
+      |         ^~~~~
+src/queue.h:40:27: note: '((void * (**)[2])loop)[2]' declared here
+   40 |   ((const QUEUE *) (q) == (const QUEUE *) QUEUE_NEXT(q))
+      |                           ^
+src/queue.h:74:9: note: in expansion of macro 'QUEUE_EMPTY'
+   74 |     if (QUEUE_EMPTY(h))                                                       \
+      |         ^~~~~~~~~~~
+src/uv-common.c:507:3: note: in expansion of macro 'QUEUE_MOVE'
+  507 |   QUEUE_MOVE(&loop->handle_queue, &queue);
+      |   ^~~~~~~~~~
+  CC       src/libuv_la-version.lo
+  CC       src/libuv_la-strtok.lo
+  CC       src/unix/libuv_la-async.lo
+  CC       src/unix/libuv_la-core.lo
+  CC       src/unix/libuv_la-dl.lo
+  CC       src/unix/libuv_la-fs.lo
+  CC       src/unix/libuv_la-getaddrinfo.lo
+  CC       src/unix/libuv_la-getnameinfo.lo
+  CC       src/unix/libuv_la-loop-watcher.lo
+  CC       src/unix/libuv_la-loop.lo
+  CC       src/unix/libuv_la-pipe.lo
+  CC       src/unix/libuv_la-poll.lo
+  CC       src/unix/libuv_la-process.lo
+  CC       src/unix/libuv_la-random-devurandom.lo
+  CC       src/unix/libuv_la-signal.lo
+  CC       src/unix/libuv_la-stream.lo
+In file included from ./src/uv-common.h:42,
+                 from src/unix/internal.h:25,
+                 from src/unix/stream.c:23:
+src/unix/stream.c: In function 'uv__write_callbacks':
+./src/queue.h:68:19: warning: storing the address of local variable 'pq' in '((void * (**)[2])MEM[(void *[2] * *)stream_24(D) + 208B])[1]' [-Wdangling-pointer=]
+   68 |     QUEUE_PREV(q) = (n);                                                      \
+      |                   ^
+./src/queue.h:78:7: note: in expansion of macro 'QUEUE_SPLIT'
+   78 |       QUEUE_SPLIT(h, q, n);                                                   \
+      |       ^~~~~~~~~~~
+src/unix/stream.c:941:3: note: in expansion of macro 'QUEUE_MOVE'
+  941 |   QUEUE_MOVE(&stream->write_completed_queue, &pq);
+      |   ^~~~~~~~~~
+src/unix/stream.c:936:9: note: 'pq' declared here
+  936 |   QUEUE pq;
+      |         ^~
+./src/queue.h:40:27: note: '((void * (**)[2])stream)[26]' declared here
+   40 |   ((const QUEUE *) (q) == (const QUEUE *) QUEUE_NEXT(q))
+      |                           ^
+src/unix/stream.c:938:7: note: in expansion of macro 'QUEUE_EMPTY'
+  938 |   if (QUEUE_EMPTY(&stream->write_completed_queue))
+      |       ^~~~~~~~~~~
+  CC       src/unix/libuv_la-tcp.lo
+  CC       src/unix/libuv_la-thread.lo
+  CC       src/unix/libuv_la-tty.lo
+  CC       src/unix/libuv_la-udp.lo
+  CC       src/unix/libuv_la-linux-core.lo
+  CC       src/unix/libuv_la-linux-inotify.lo
+In file included from ./src/uv-common.h:42,
+                 from src/unix/internal.h:25,
+                 from src/unix/linux-inotify.c:23:
+src/unix/linux-inotify.c: In function 'uv__inotify_fork':
+./src/queue.h:68:19: warning: storing the address of local variable 'queue' in '((void * (**)[2])MEM[(void *[2] * *)&tmp_watcher_list + 32B])[1]' [-Wdangling-pointer=]
+   68 |     QUEUE_PREV(q) = (n);                                                      \
+      |                   ^
+./src/queue.h:78:7: note: in expansion of macro 'QUEUE_SPLIT'
+   78 |       QUEUE_SPLIT(h, q, n);                                                   \
+      |       ^~~~~~~~~~~
+src/unix/linux-inotify.c:133:5: note: in expansion of macro 'QUEUE_MOVE'
+  133 |     QUEUE_MOVE(&tmp_watcher_list.watchers, &queue);
+      |     ^~~~~~~~~~
+src/unix/linux-inotify.c:92:9: note: 'queue' declared here
+   92 |   QUEUE queue;
+      |         ^~~~~
+./src/queue.h:40:27: note: '*(void * (**)[2])((char *)&tmp_watcher_list + offsetof(struct watcher_list, watchers[0]))' declared here
+   40 |   ((const QUEUE *) (q) == (const QUEUE *) QUEUE_NEXT(q))
+      |                           ^
+./src/queue.h:74:9: note: in expansion of macro 'QUEUE_EMPTY'
+   74 |     if (QUEUE_EMPTY(h))                                                       \
+      |         ^~~~~~~~~~~
+src/unix/linux-inotify.c:133:5: note: in expansion of macro 'QUEUE_MOVE'
+  133 |     QUEUE_MOVE(&tmp_watcher_list.watchers, &queue);
+      |     ^~~~~~~~~~
+  CC       src/unix/libuv_la-linux-syscalls.lo
+  CC       src/unix/libuv_la-procfs-exepath.lo
+  CC       src/unix/libuv_la-proctitle.lo
+  CC       src/unix/libuv_la-random-getrandom.lo
+  CC       src/unix/libuv_la-random-sysctl-linux.lo
+  CC       src/unix/libuv_la-epoll.lo
+  CCLD     libuv.la
+make[1]: Leaving directory '/mnt/tmp/471736.124.short.q/RtmpJJ1fSC/R.INSTALL225c94882ec/fs/src/libuv-1.44.2'
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o fs.so init.o id.o file.o path.o fs.o link.o utils.o dir.o getmode.o error.o unix/getmode.o bsd/setmode.o bsd/strmode.o bsd/reallocarray.o ./libuv-1.44.2/.libs/libuv.a -pthread -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-fs/00new/fs/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (fs)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-minqa’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-cli’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-rlang’
+* installing *source* package ‘withr’ ...
+** package ‘withr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (withr)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-RColorBrewer’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-jsonlite’
+* installing *source* package ‘magrittr’ ...
+** package ‘magrittr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c pipe.c -o pipe.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c utils.c -o utils.o
+/usr/local/gcc-12.2.0/bin/gcc -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o magrittr.so pipe.o utils.o -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-magrittr/00new/magrittr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (magrittr)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-rstudioapi’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-data.table’
+* installing *source* package ‘bootstrap’ ...
+** package ‘bootstrap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 12.2.0’
+using Fortran compiler: ‘GNU Fortran (GCC) 8.5.0 20210514 (Red Hat 8.5.0-22)’
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c bootstrap_init.c -o bootstrap_init.o
+gfortran  -fpic  -g -O2  -c boott.f -o boott.o
+/usr/local/gcc-12.2.0/bin/gcc -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o bootstrap.so bootstrap_init.o boott.o -lgfortran -lm -lquadmath -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-bootstrap/00new/bootstrap/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bootstrap)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-numDeriv’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-TMB’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-R6’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-lbfgs’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-RcppArmadillo’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-doParallel’
+ERROR: dependency ‘rlang’ is not available for package ‘cachem’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cachem’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-processx’
+ERROR: dependency ‘rlang’ is not available for package ‘htmltools’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/htmltools’
+ERROR: dependency ‘openssl’ is not available for package ‘ids’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/ids’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-timechange’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-tzdb’
+ERROR: dependency ‘xfun’ is not available for package ‘knitr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/knitr’
+ERROR: dependency ‘rlang’ is not available for package ‘lifecycle’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/lifecycle’
+ERROR: dependencies ‘R6’, ‘stringi’ are not available for package ‘data.tree’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/data.tree’
+ERROR: dependencies ‘jsonlite’, ‘openssl’, ‘R6’ are not available for package ‘httr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/httr’
+ERROR: dependency ‘rlang’ is not available for package ‘xml2’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/xml2’
+ERROR: dependency ‘nloptr’ is not available for package ‘lme4’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/lme4’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-quantregForest’
+ERROR: dependencies ‘lbfgs’, ‘RcppArmadillo’ are not available for package ‘GauPro’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/GauPro’
+ERROR: dependencies ‘fs’, ‘rlang’, ‘htmltools’ are not available for package ‘sass’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/sass’
+ERROR: dependency ‘htmltools’ is not available for package ‘fontawesome’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/fontawesome’
+ERROR: dependency ‘htmltools’ is not available for package ‘jquerylib’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/jquerylib’
+ERROR: dependency ‘cachem’ is not available for package ‘memoise’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/memoise’
+ERROR: dependencies ‘fs’, ‘httr’, ‘lifecycle’, ‘openssl’, ‘withr’ are not available for package ‘gargle’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/gargle’
+ERROR: dependency ‘lifecycle’ is not available for package ‘systemfonts’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/systemfonts’
+ERROR: dependency ‘processx’ is not available for package ‘callr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/callr’
+ERROR: dependencies ‘glue’, ‘lifecycle’ are not available for package ‘gtable’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/gtable’
+ERROR: dependencies ‘farver’, ‘glue’, ‘lifecycle’, ‘RColorBrewer’ are not available for package ‘scales’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/scales’
+ERROR: dependencies ‘glue’, ‘lifecycle’ are not available for package ‘vctrs’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/vctrs’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-lubridate’
+ERROR: dependencies ‘data.table’, ‘lme4’, ‘TMB’ are not available for package ‘fishmethods’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/fishmethods’
+ERROR: dependencies ‘htmltools’, ‘jquerylib’, ‘jsonlite’, ‘lifecycle’, ‘memoise’, ‘rlang’, ‘sass’ are not available for package ‘bslib’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/bslib’
+ERROR: dependencies ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘igraph’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/igraph’
+ERROR: dependencies ‘rlang’, ‘vctrs’ are not available for package ‘blob’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/blob’
+ERROR: dependencies ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘tidyselect’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tidyselect’
+ERROR: dependencies ‘lifecycle’, ‘systemfonts’ are not available for package ‘textshaping’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/textshaping’
+ERROR: dependencies ‘memoise’, ‘rlang’ are not available for package ‘conflicted’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/conflicted’
+ERROR: dependencies ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘hms’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/hms’
+ERROR: dependencies ‘cli’, ‘fansi’, ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘pillar’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/pillar’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘purrr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/purrr’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘stringi’, ‘vctrs’ are not available for package ‘stringr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/stringr’
+ERROR: dependencies ‘hms’, ‘R6’ are not available for package ‘progress’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/progress’
+ERROR: dependencies ‘bslib’, ‘fontawesome’, ‘htmltools’, ‘jquerylib’, ‘knitr’ are not available for package ‘rmarkdown’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/rmarkdown’
+ERROR: dependency ‘stringr’ is not available for package ‘selectr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/selectr’
+ERROR: dependencies ‘fansi’, ‘lifecycle’, ‘pillar’, ‘rlang’, ‘vctrs’ are not available for package ‘tibble’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tibble’
+ERROR: dependencies ‘systemfonts’, ‘textshaping’ are not available for package ‘ragg’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/ragg’
+ERROR: dependencies ‘htmltools’, ‘knitr’, ‘rmarkdown’ are not available for package ‘htmlwidgets’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/htmlwidgets’
+ERROR: dependency ‘tibble’ is not available for package ‘cellranger’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cellranger’
+ERROR: dependency ‘tibble’ is not available for package ‘rematch2’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/rematch2’
+ERROR: dependencies ‘bit64’, ‘cli’, ‘hms’, ‘lifecycle’, ‘rlang’, ‘tibble’, ‘tidyselect’, ‘tzdb’, ‘vctrs’, ‘progress’ are not available for package ‘vroom’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/vroom’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘pillar’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘dplyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/dplyr’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘tibble’ are not available for package ‘forcats’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/forcats’
+ERROR: dependencies ‘cli’, ‘gargle’, ‘httr’, ‘lifecycle’, ‘pillar’, ‘purrr’, ‘tibble’, ‘uuid’, ‘vctrs’, ‘withr’ are not available for package ‘googledrive’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/googledrive’
+ERROR: dependencies ‘callr’, ‘cli’, ‘fs’, ‘knitr’, ‘lifecycle’, ‘rmarkdown’, ‘withr’ are not available for package ‘reprex’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/reprex’
+ERROR: dependencies ‘cli’, ‘httr’, ‘lifecycle’, ‘selectr’, ‘tibble’, ‘xml2’ are not available for package ‘rvest’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/rvest’
+ERROR: dependencies ‘cli’, ‘gtable’, ‘isoband’, ‘lifecycle’, ‘rlang’, ‘scales’, ‘tibble’, ‘vctrs’ are not available for package ‘ggplot2’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/ggplot2’
+ERROR: dependencies ‘htmlwidgets’, ‘htmltools’ are not available for package ‘visNetwork’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/visNetwork’
+ERROR: dependencies ‘dplyr’, ‘lifecycle’, ‘rlang’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘dtplyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/dtplyr’
+ERROR: dependencies ‘cellranger’, ‘curl’, ‘gargle’, ‘googledrive’, ‘httr’, ‘ids’, ‘lifecycle’, ‘purrr’, ‘rematch2’, ‘rlang’, ‘tibble’, ‘vctrs’ are not available for package ‘googlesheets4’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/googlesheets4’
+ERROR: dependencies ‘cli’, ‘hms’, ‘lifecycle’, ‘rlang’, ‘tibble’, ‘vroom’, ‘tzdb’ are not available for package ‘readr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/readr’
+ERROR: dependencies ‘cellranger’, ‘tibble’, ‘progress’ are not available for package ‘readxl’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/readxl’
+ERROR: dependencies ‘cli’, ‘dplyr’, ‘glue’, ‘lifecycle’, ‘purrr’, ‘rlang’, ‘stringr’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘tidyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tidyr’
+ERROR: dependencies ‘dplyr’, ‘glue’, ‘htmltools’, ‘htmlwidgets’, ‘igraph’, ‘purrr’, ‘readr’, ‘rlang’, ‘cli’, ‘scales’, ‘stringr’, ‘tibble’, ‘tidyr’, ‘visNetwork’ are not available for package ‘DiagrammeR’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/DiagrammeR’
+ERROR: dependencies ‘dplyr’, ‘lifecycle’, ‘purrr’, ‘rlang’, ‘stringr’, ‘tibble’, ‘tidyr’ are not available for package ‘broom’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/broom’
+ERROR: dependencies ‘blob’, ‘cli’, ‘DBI’, ‘dplyr’, ‘lifecycle’, ‘pillar’, ‘purrr’, ‘rlang’, ‘tibble’, ‘tidyr’, ‘tidyselect’, ‘vctrs’ are not available for package ‘dbplyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/dbplyr’
+ERROR: dependencies ‘cli’, ‘forcats’, ‘hms’, ‘lifecycle’, ‘readr’, ‘rlang’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘haven’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/haven’
+ERROR: dependencies ‘broom’, ‘magrittr’, ‘purrr’, ‘rlang’, ‘tibble’, ‘tidyr’, ‘tidyselect’, ‘vctrs’ are not available for package ‘modelr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/modelr’
+ERROR: dependencies ‘data.tree’, ‘DiagrammeR’ are not available for package ‘randomForestSRC’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/randomForestSRC’
+ERROR: dependencies ‘broom’, ‘conflicted’, ‘cli’, ‘dbplyr’, ‘dplyr’, ‘dtplyr’, ‘forcats’, ‘ggplot2’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘hms’, ‘httr’, ‘lubridate’, ‘magrittr’, ‘modelr’, ‘pillar’, ‘purrr’, ‘ragg’, ‘readr’, ‘readxl’, ‘reprex’, ‘rlang’, ‘rvest’, ‘stringr’, ‘tibble’, ‘tidyr’, ‘xml2’ are not available for package ‘tidyverse’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tidyverse’
+
+The downloaded source packages are in
+	‘/mnt/tmp/471736.124.short.q/RtmpGuMMgG/downloaded_packages’
+Using 100 trees...
+
+
+Installing packages into ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘sass’, ‘cachem’, ‘bit64’, ‘bslib’, ‘tinytex’, ‘farver’, ‘stringi’, ‘htmltools’, ‘htmlwidgets’, ‘igraph’, ‘visNetwork’, ‘memoise’, ‘blob’, ‘tidyselect’, ‘gargle’, ‘uuid’, ‘cellranger’, ‘rematch2’, ‘openssl’, ‘timechange’, ‘systemfonts’, ‘textshaping’, ‘vroom’, ‘tzdb’, ‘progress’, ‘callr’, ‘fs’, ‘rmarkdown’, ‘selectr’, ‘minqa’, ‘nloptr’, ‘cli’, ‘glue’, ‘gtable’, ‘isoband’, ‘lifecycle’, ‘rlang’, ‘scales’, ‘tibble’, ‘vctrs’, ‘data.tree’, ‘DiagrammeR’, ‘broom’, ‘conflicted’, ‘dbplyr’, ‘dplyr’, ‘dtplyr’, ‘forcats’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘hms’, ‘httr’, ‘lubridate’, ‘modelr’, ‘pillar’, ‘purrr’, ‘ragg’, ‘readr’, ‘readxl’, ‘reprex’, ‘rvest’, ‘stringr’, ‘tidyr’, ‘xml2’, ‘data.table’, ‘lme4’, ‘TMB’, ‘RcppArmadillo’
+
+trying URL 'http://cran.us.r-project.org/src/contrib/sass_0.4.9.tar.gz'
+Content type 'application/x-gzip' length 3025086 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cachem_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 27192 bytes (26 KB)
+==================================================
+downloaded 26 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/bit64_4.0.5.tar.gz'
+Content type 'application/x-gzip' length 135091 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/bslib_0.7.0.tar.gz'
+Content type 'application/x-gzip' length 5125401 bytes (4.9 MB)
+==================================================
+downloaded 4.9 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tinytex_0.51.tar.gz'
+Content type 'application/x-gzip' length 34491 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/farver_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 1275981 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/stringi_1.8.4.tar.gz'
+Content type 'application/x-gzip' length 11917497 bytes (11.4 MB)
+==================================================
+downloaded 11.4 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/htmltools_0.5.8.1.tar.gz'
+Content type 'application/x-gzip' length 135134 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/htmlwidgets_1.6.4.tar.gz'
+Content type 'application/x-gzip' length 868895 bytes (848 KB)
+==================================================
+downloaded 848 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/igraph_2.0.3.tar.gz'
+Content type 'application/x-gzip' length 4967875 bytes (4.7 MB)
+==================================================
+downloaded 4.7 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/visNetwork_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 4273723 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/memoise_2.0.1.tar.gz'
+Content type 'application/x-gzip' length 17852 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/blob_1.2.4.tar.gz'
+Content type 'application/x-gzip' length 10620 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tidyselect_1.2.1.tar.gz'
+Content type 'application/x-gzip' length 103591 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/gargle_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 627560 bytes (612 KB)
+==================================================
+downloaded 612 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/uuid_1.2-0.tar.gz'
+Content type 'application/x-gzip' length 79715 bytes (77 KB)
+==================================================
+downloaded 77 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cellranger_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 63857 bytes (62 KB)
+==================================================
+downloaded 62 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rematch2_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 13366 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/openssl_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 1207404 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/timechange_0.3.0.tar.gz'
+Content type 'application/x-gzip' length 103439 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/systemfonts_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 85584 bytes (83 KB)
+==================================================
+downloaded 83 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/textshaping_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 37960 bytes (37 KB)
+==================================================
+downloaded 37 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/vroom_1.6.5.tar.gz'
+Content type 'application/x-gzip' length 750416 bytes (732 KB)
+==================================================
+downloaded 732 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 586327 bytes (572 KB)
+==================================================
+downloaded 572 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/progress_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 30499 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/callr_3.7.6.tar.gz'
+Content type 'application/x-gzip' length 104358 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/fs_1.6.4.tar.gz'
+Content type 'application/x-gzip' length 1201506 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rmarkdown_2.27.tar.gz'
+Content type 'application/x-gzip' length 2190416 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'application/x-gzip' length 41371 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/minqa_1.2.7.tar.gz'
+Content type 'application/x-gzip' length 54344 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/nloptr_2.1.1.tar.gz'
+Content type 'application/x-gzip' length 2236635 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cli_3.6.3.tar.gz'
+Content type 'application/x-gzip' length 568162 bytes (554 KB)
+==================================================
+downloaded 554 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/glue_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 105420 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/gtable_0.3.5.tar.gz'
+Content type 'application/x-gzip' length 130227 bytes (127 KB)
+==================================================
+downloaded 127 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/isoband_0.2.7.tar.gz'
+Content type 'application/x-gzip' length 1591812 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lifecycle_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 107656 bytes (105 KB)
+==================================================
+downloaded 105 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rlang_1.1.4.tar.gz'
+Content type 'application/x-gzip' length 767041 bytes (749 KB)
+==================================================
+downloaded 749 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/scales_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 302544 bytes (295 KB)
+==================================================
+downloaded 295 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tibble_3.2.1.tar.gz'
+Content type 'application/x-gzip' length 565982 bytes (552 KB)
+==================================================
+downloaded 552 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/vctrs_0.6.5.tar.gz'
+Content type 'application/x-gzip' length 969066 bytes (946 KB)
+==================================================
+downloaded 946 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/data.tree_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 1629152 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/DiagrammeR_1.0.11.tar.gz'
+Content type 'application/x-gzip' length 1238722 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/broom_1.0.6.tar.gz'
+Content type 'application/x-gzip' length 641538 bytes (626 KB)
+==================================================
+downloaded 626 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/conflicted_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 17071 bytes (16 KB)
+==================================================
+downloaded 16 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/dbplyr_2.5.0.tar.gz'
+Content type 'application/x-gzip' length 770647 bytes (752 KB)
+==================================================
+downloaded 752 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/dplyr_1.1.4.tar.gz'
+Content type 'application/x-gzip' length 1207521 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/dtplyr_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 150971 bytes (147 KB)
+==================================================
+downloaded 147 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 294183 bytes (287 KB)
+==================================================
+downloaded 287 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/googledrive_2.1.1.tar.gz'
+Content type 'application/x-gzip' length 1609266 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/googlesheets4_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 232584 bytes (227 KB)
+==================================================
+downloaded 227 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/haven_2.5.4.tar.gz'
+Content type 'application/x-gzip' length 313332 bytes (305 KB)
+==================================================
+downloaded 305 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/hms_1.1.3.tar.gz'
+Content type 'application/x-gzip' length 43379 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/httr_1.4.7.tar.gz'
+Content type 'application/x-gzip' length 118500 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'application/x-gzip' length 428043 bytes (418 KB)
+==================================================
+downloaded 418 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/modelr_0.1.11.tar.gz'
+Content type 'application/x-gzip' length 121480 bytes (118 KB)
+==================================================
+downloaded 118 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/pillar_1.9.0.tar.gz'
+Content type 'application/x-gzip' length 444528 bytes (434 KB)
+==================================================
+downloaded 434 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/purrr_1.0.2.tar.gz'
+Content type 'application/x-gzip' length 220868 bytes (215 KB)
+==================================================
+downloaded 215 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/ragg_1.3.2.tar.gz'
+Content type 'application/x-gzip' length 430366 bytes (420 KB)
+==================================================
+downloaded 420 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/readr_2.1.5.tar.gz'
+Content type 'application/x-gzip' length 298065 bytes (291 KB)
+==================================================
+downloaded 291 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/readxl_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 2093488 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/reprex_2.1.1.tar.gz'
+Content type 'application/x-gzip' length 1089023 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rvest_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 115876 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/stringr_1.5.1.tar.gz'
+Content type 'application/x-gzip' length 176599 bytes (172 KB)
+==================================================
+downloaded 172 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tidyr_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 809058 bytes (790 KB)
+==================================================
+downloaded 790 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/xml2_1.3.6.tar.gz'
+Content type 'application/x-gzip' length 294715 bytes (287 KB)
+==================================================
+downloaded 287 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/data.table_1.15.4.tar.gz'
+Content type 'application/x-gzip' length 5387593 bytes (5.1 MB)
+==================================================
+downloaded 5.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lme4_1.1-35.5.tar.gz'
+Content type 'application/x-gzip' length 3300116 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/TMB_1.9.14.tar.gz'
+Content type 'application/x-gzip' length 759301 bytes (741 KB)
+==================================================
+downloaded 741 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/RcppArmadillo_0.12.8.4.0.tar.gz'
+Content type 'application/x-gzip' length 1406640 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/ggplot2_3.5.1.tar.gz'
+Content type 'application/x-gzip' length 3604371 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/randomForestSRC_3.3.0.tar.gz'
+Content type 'application/x-gzip' length 1329920 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tidyverse_2.0.0.tar.gz'
+Content type 'application/x-gzip' length 704618 bytes (688 KB)
+==================================================
+downloaded 688 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/fishmethods_1.12-1.tar.gz'
+Content type 'application/x-gzip' length 268741 bytes (262 KB)
+==================================================
+downloaded 262 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/GauPro_0.2.12.tar.gz'
+Content type 'application/x-gzip' length 662125 bytes (646 KB)
+==================================================
+downloaded 646 KB
+
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-bit64’
+* installing *source* package ‘tinytex’ ...
+** package ‘tinytex’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tinytex)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-farver’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-stringi’
+* installing *source* package ‘uuid’ ...
+** package ‘uuid’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... /usr/local/gcc-12.2.0/bin/gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /usr/local/gcc-12.2.0/bin/gcc accepts -g... yes
+checking for /usr/local/gcc-12.2.0/bin/gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for grp.h... yes
+checking for langinfo.h... yes
+checking for locale.h... yes
+checking for netinet/in.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/socket.h... yes
+checking for sys/sockio.h... no
+checking for sys/syscall.h... yes
+checking for sys/sendfile.h... yes
+checking for sys/time.h... yes
+checking for sys/un.h... yes
+checking for unistd.h... (cached) yes
+checking for net/if.h... yes
+checking for net/if_dl.h... no
+checking for dirfd... yes
+checking for err... yes
+checking for errx... yes
+checking for getexecname... no
+checking for getrandom... yes
+checking for jrand48... yes
+checking for llseek... no
+checking for lchown... yes
+checking for mempcpy... yes
+checking for mkostemp... yes
+checking for nanosleep... yes
+checking for sendfile... yes
+checking for srandom... yes
+checking for strnchr... no
+checking for strndup... yes
+checking for strnlen... yes
+checking for usleep... yes
+checking for warn... yes
+checking for warnx... yes
+checking for flock... yes
+checking for struct sockaddr.sa_len... no
+checking for dlfcn.h... yes
+checking for library containing dlsym... -ldl
+checking for thread local storage (TLS) support... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/config.h
+** libs
+using C compiler: ‘gcc (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c R.c -o R.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c Ruuid.c -o Ruuid.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c clear.c -o clear.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c compare.c -o compare.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c copy.c -o copy.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c gen_uuid.c -o gen_uuid.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c isnull.c -o isnull.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c md5.c -o md5.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c pack.c -o pack.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c parse.c -o parse.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c rand.c -o rand.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c randutils.c -o randutils.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c sha1.c -o sha1.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c unpack.c -o unpack.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -include config.h -I/usr/local/include  -I/usr/local/include    -fpic  -g -O2  -c unparse.c -o unparse.o
+/usr/local/gcc-12.2.0/bin/gcc -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o uuid.so R.o Ruuid.o clear.o compare.o copy.o gen_uuid.o isnull.o md5.o pack.o parse.o rand.o randutils.o sha1.o unpack.o unparse.o -ldl -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-uuid/00new/uuid/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (uuid)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-openssl’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-timechange’
+* installing *source* package ‘tzdb’ ...
+** package ‘tzdb’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG  -I'/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fpic  -g -O2   -c api.cpp -o api.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG  -I'/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fpic  -g -O2   -c cpp11.cpp -o cpp11.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG  -I'/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fpic  -g -O2   -c names.cpp -o names.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG  -I'/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fpic  -g -O2   -c path.cpp -o path.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG  -I'/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fpic  -g -O2   -c tz.cpp -o tz.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG  -I'/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fpic  -g -O2   -c version.cpp -o version.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o tzdb.so api.o cpp11.o names.o path.o tz.o version.o -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-tzdb/00new/tzdb/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tzdb)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-callr’
+* installing *source* package ‘fs’ ...
+** package ‘fs’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c init.cc -o init.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c id.cc -o id.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c file.cc -o file.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c path.cc -o path.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c fs.cc -o fs.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c link.cc -o link.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c utils.cc -o utils.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c dir.cc -o dir.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c getmode.cc -o getmode.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c error.cc -o error.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2   -c unix/getmode.cc -o unix/getmode.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2  -c bsd/setmode.c -o bsd/setmode.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2  -c bsd/strmode.c -o bsd/strmode.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG -I./libuv-1.44.2/include -I. -pthread  -I/usr/local/include    -fpic  -g -O2  -c bsd/reallocarray.c -o bsd/reallocarray.o
+(cd libuv-1.44.2 \
+&& CC="/usr/local/gcc-12.2.0/bin/gcc" CPPFLAGS="-I/usr/local/include" CFLAGS="-g -O2  -fpic -fvisibility=hidden -std=c99" AR="ar" RANLIB="ranlib" LDFLAGS="-L/usr/local/lib64" ./configure  --quiet)
+make --directory=libuv-1.44.2 \
+	HAVE_DTRACE=0
+make[1]: Entering directory '/mnt/tmp/471736.124.short.q/Rtmpw3oBcc/R.INSTALL26fa47e1889bd/fs/src/libuv-1.44.2'
+  CC       src/libuv_la-fs-poll.lo
+  CC       src/libuv_la-idna.lo
+  CC       src/libuv_la-inet.lo
+  CC       src/libuv_la-random.lo
+  CC       src/libuv_la-strscpy.lo
+  CC       src/libuv_la-threadpool.lo
+  CC       src/libuv_la-timer.lo
+  CC       src/libuv_la-uv-data-getter-setters.lo
+  CC       src/libuv_la-uv-common.lo
+In file included from src/uv-common.h:42,
+                 from src/uv-common.c:23:
+src/uv-common.c: In function 'uv_walk':
+src/queue.h:68:19: warning: storing the address of local variable 'queue' in '((void * (**)[2])MEM[(void *[2] * *)loop_13(D) + 16B])[1]' [-Wdangling-pointer=]
+   68 |     QUEUE_PREV(q) = (n);                                                      \
+      |                   ^
+src/queue.h:78:7: note: in expansion of macro 'QUEUE_SPLIT'
+   78 |       QUEUE_SPLIT(h, q, n);                                                   \
+      |       ^~~~~~~~~~~
+src/uv-common.c:507:3: note: in expansion of macro 'QUEUE_MOVE'
+  507 |   QUEUE_MOVE(&loop->handle_queue, &queue);
+      |   ^~~~~~~~~~
+src/uv-common.c:503:9: note: 'queue' declared here
+  503 |   QUEUE queue;
+      |         ^~~~~
+src/queue.h:40:27: note: '((void * (**)[2])loop)[2]' declared here
+   40 |   ((const QUEUE *) (q) == (const QUEUE *) QUEUE_NEXT(q))
+      |                           ^
+src/queue.h:74:9: note: in expansion of macro 'QUEUE_EMPTY'
+   74 |     if (QUEUE_EMPTY(h))                                                       \
+      |         ^~~~~~~~~~~
+src/uv-common.c:507:3: note: in expansion of macro 'QUEUE_MOVE'
+  507 |   QUEUE_MOVE(&loop->handle_queue, &queue);
+      |   ^~~~~~~~~~
+  CC       src/libuv_la-version.lo
+  CC       src/libuv_la-strtok.lo
+  CC       src/unix/libuv_la-async.lo
+  CC       src/unix/libuv_la-core.lo
+  CC       src/unix/libuv_la-dl.lo
+  CC       src/unix/libuv_la-fs.lo
+  CC       src/unix/libuv_la-getaddrinfo.lo
+  CC       src/unix/libuv_la-getnameinfo.lo
+  CC       src/unix/libuv_la-loop-watcher.lo
+  CC       src/unix/libuv_la-loop.lo
+  CC       src/unix/libuv_la-pipe.lo
+  CC       src/unix/libuv_la-poll.lo
+  CC       src/unix/libuv_la-process.lo
+  CC       src/unix/libuv_la-random-devurandom.lo
+  CC       src/unix/libuv_la-signal.lo
+  CC       src/unix/libuv_la-stream.lo
+In file included from ./src/uv-common.h:42,
+                 from src/unix/internal.h:25,
+                 from src/unix/stream.c:23:
+src/unix/stream.c: In function 'uv__write_callbacks':
+./src/queue.h:68:19: warning: storing the address of local variable 'pq' in '((void * (**)[2])MEM[(void *[2] * *)stream_24(D) + 208B])[1]' [-Wdangling-pointer=]
+   68 |     QUEUE_PREV(q) = (n);                                                      \
+      |                   ^
+./src/queue.h:78:7: note: in expansion of macro 'QUEUE_SPLIT'
+   78 |       QUEUE_SPLIT(h, q, n);                                                   \
+      |       ^~~~~~~~~~~
+src/unix/stream.c:941:3: note: in expansion of macro 'QUEUE_MOVE'
+  941 |   QUEUE_MOVE(&stream->write_completed_queue, &pq);
+      |   ^~~~~~~~~~
+src/unix/stream.c:936:9: note: 'pq' declared here
+  936 |   QUEUE pq;
+      |         ^~
+./src/queue.h:40:27: note: '((void * (**)[2])stream)[26]' declared here
+   40 |   ((const QUEUE *) (q) == (const QUEUE *) QUEUE_NEXT(q))
+      |                           ^
+src/unix/stream.c:938:7: note: in expansion of macro 'QUEUE_EMPTY'
+  938 |   if (QUEUE_EMPTY(&stream->write_completed_queue))
+      |       ^~~~~~~~~~~
+  CC       src/unix/libuv_la-tcp.lo
+  CC       src/unix/libuv_la-thread.lo
+  CC       src/unix/libuv_la-tty.lo
+  CC       src/unix/libuv_la-udp.lo
+  CC       src/unix/libuv_la-linux-core.lo
+  CC       src/unix/libuv_la-linux-inotify.lo
+In file included from ./src/uv-common.h:42,
+                 from src/unix/internal.h:25,
+                 from src/unix/linux-inotify.c:23:
+src/unix/linux-inotify.c: In function 'uv__inotify_fork':
+./src/queue.h:68:19: warning: storing the address of local variable 'queue' in '((void * (**)[2])MEM[(void *[2] * *)&tmp_watcher_list + 32B])[1]' [-Wdangling-pointer=]
+   68 |     QUEUE_PREV(q) = (n);                                                      \
+      |                   ^
+./src/queue.h:78:7: note: in expansion of macro 'QUEUE_SPLIT'
+   78 |       QUEUE_SPLIT(h, q, n);                                                   \
+      |       ^~~~~~~~~~~
+src/unix/linux-inotify.c:133:5: note: in expansion of macro 'QUEUE_MOVE'
+  133 |     QUEUE_MOVE(&tmp_watcher_list.watchers, &queue);
+      |     ^~~~~~~~~~
+src/unix/linux-inotify.c:92:9: note: 'queue' declared here
+   92 |   QUEUE queue;
+      |         ^~~~~
+./src/queue.h:40:27: note: '*(void * (**)[2])((char *)&tmp_watcher_list + offsetof(struct watcher_list, watchers[0]))' declared here
+   40 |   ((const QUEUE *) (q) == (const QUEUE *) QUEUE_NEXT(q))
+      |                           ^
+./src/queue.h:74:9: note: in expansion of macro 'QUEUE_EMPTY'
+   74 |     if (QUEUE_EMPTY(h))                                                       \
+      |         ^~~~~~~~~~~
+src/unix/linux-inotify.c:133:5: note: in expansion of macro 'QUEUE_MOVE'
+  133 |     QUEUE_MOVE(&tmp_watcher_list.watchers, &queue);
+      |     ^~~~~~~~~~
+  CC       src/unix/libuv_la-linux-syscalls.lo
+  CC       src/unix/libuv_la-procfs-exepath.lo
+  CC       src/unix/libuv_la-proctitle.lo
+  CC       src/unix/libuv_la-random-getrandom.lo
+  CC       src/unix/libuv_la-random-sysctl-linux.lo
+  CC       src/unix/libuv_la-epoll.lo
+  CCLD     libuv.la
+make[1]: Leaving directory '/mnt/tmp/471736.124.short.q/Rtmpw3oBcc/R.INSTALL26fa47e1889bd/fs/src/libuv-1.44.2'
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o fs.so init.o id.o file.o path.o fs.o link.o utils.o dir.o getmode.o error.o unix/getmode.o bsd/setmode.o bsd/strmode.o bsd/reallocarray.o ./libuv-1.44.2/.libs/libuv.a -pthread -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-fs/00new/fs/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (fs)
+* installing *source* package ‘minqa’ ...
+** package ‘minqa’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using Fortran compiler: ‘GNU Fortran (GCC) 8.5.0 20210514 (Red Hat 8.5.0-22)’
+using C++ compiler: ‘g++ (GCC) 12.2.0’
+gfortran  -fpic  -g -O2  -c altmov.f -o altmov.o
+gfortran  -fpic  -g -O2  -c bigden.f -o bigden.o
+gfortran  -fpic  -g -O2  -c biglag.f -o biglag.o
+gfortran  -fpic  -g -O2  -c bobyqa.f -o bobyqa.o
+gfortran  -fpic  -g -O2  -c bobyqb.f -o bobyqb.o
+gfortran  -fpic  -g -O2  -c lagmax.f -o lagmax.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG  -I'/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c minqa.cpp -o minqa.o
+gfortran  -fpic  -g -O2  -c newuoa.f -o newuoa.o
+gfortran  -fpic  -g -O2  -c newuob.f -o newuob.o
+gfortran  -fpic  -g -O2  -c prelim.f -o prelim.o
+gfortran  -fpic  -g -O2  -c rescue.f -o rescue.o
+gfortran  -fpic  -g -O2  -c trsapp.f -o trsapp.o
+gfortran  -fpic  -g -O2  -c trsbox.f -o trsbox.o
+gfortran  -fpic  -g -O2  -c trstep.f -o trstep.o
+gfortran  -fpic  -g -O2  -c uobyqa.f -o uobyqa.o
+gfortran  -fpic  -g -O2  -c uobyqb.f -o uobyqb.o
+gfortran  -fpic  -g -O2  -c update.f -o update.o
+gfortran  -fpic  -g -O2  -c updatebobyqa.f -o updatebobyqa.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++17 -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o minqa.so altmov.o bigden.o biglag.o bobyqa.o bobyqb.o lagmax.o minqa.o newuoa.o newuob.o prelim.o rescue.o trsapp.o trsbox.o trstep.o uobyqa.o uobyqb.o update.o updatebobyqa.o -lgfortran -lm -lquadmath -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-minqa/00new/minqa/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (minqa)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-nloptr’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-cli’
+* installing *source* package ‘glue’ ...
+** package ‘glue’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 12.2.0’
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fpic  -g -O2  -c glue.c -o glue.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fpic  -g -O2  -c init.c -o init.o
+/usr/local/gcc-12.2.0/bin/gcc -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fpic  -g -O2  -c trim.c -o trim.o
+/usr/local/gcc-12.2.0/bin/gcc -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o glue.so glue.o init.o trim.o -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-glue/00new/glue/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (glue)
+* installing *source* package ‘isoband’ ...
+** package ‘isoband’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 12.2.0’
+using C++11
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c clip-lines.cpp -o clip-lines.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c init.cpp -o init.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c isoband.cpp -o isoband.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c polygon.cpp -o polygon.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c separate-polygons.cpp -o separate-polygons.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c test-clip-lines.cpp -o test-clip-lines.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c test-runner.cpp -o test-runner.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -I"/usr/local/R-4.4.0/lib64/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c test-separate-polygons.cpp -o test-separate-polygons.o
+/usr/local/gcc-12.2.0/bin/g++ -std=gnu++11 -shared -L/usr/local/R-4.4.0/lib64/R/lib -L/usr/local/lib64 -o isoband.so clip-lines.o init.o isoband.o polygon.o separate-polygons.o test-clip-lines.o test-runner.o test-separate-polygons.o -L/usr/local/R-4.4.0/lib64/R/lib -lR
+installing to /home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-isoband/00new/isoband/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (isoband)
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-rlang’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-data.table’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-TMB’
+ERROR: failed to lock directory ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4’ for modifying
+Try removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/00LOCK-RcppArmadillo’
+ERROR: dependency ‘rlang’ is not available for package ‘cachem’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cachem’
+ERROR: dependency ‘rlang’ is not available for package ‘htmltools’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/htmltools’
+ERROR: dependencies ‘cli’, ‘rlang’ are not available for package ‘lifecycle’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/lifecycle’
+ERROR: dependency ‘stringi’ is not available for package ‘data.tree’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/data.tree’
+ERROR: dependencies ‘curl’, ‘jsonlite’, ‘mime’, ‘openssl’ are not available for package ‘httr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/httr’
+ERROR: dependency ‘timechange’ is not available for package ‘lubridate’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/lubridate’
+ERROR: dependencies ‘cli’, ‘rlang’ are not available for package ‘xml2’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/xml2’
+ERROR: dependencies ‘minqa’, ‘nloptr’ are not available for package ‘lme4’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/lme4’
+ERROR: dependencies ‘lbfgs’, ‘RcppArmadillo’ are not available for package ‘GauPro’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/GauPro’
+ERROR: dependencies ‘fs’, ‘rlang’, ‘htmltools’ are not available for package ‘sass’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/sass’
+ERROR: dependencies ‘rlang’, ‘cachem’ are not available for package ‘memoise’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/memoise’
+ERROR: dependencies ‘cli’, ‘fs’, ‘httr’, ‘lifecycle’, ‘openssl’, ‘rlang’ are not available for package ‘gargle’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/gargle’
+ERROR: dependency ‘lifecycle’ is not available for package ‘systemfonts’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/systemfonts’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’ are not available for package ‘gtable’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/gtable’
+ERROR: dependencies ‘cli’, ‘farver’, ‘lifecycle’, ‘munsell’, ‘rlang’ are not available for package ‘scales’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/scales’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’ are not available for package ‘vctrs’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/vctrs’
+ERROR: dependencies ‘data.table’, ‘lme4’, ‘TMB’ are not available for package ‘fishmethods’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/fishmethods’
+ERROR: dependencies ‘cachem’, ‘htmltools’, ‘jquerylib’, ‘lifecycle’, ‘memoise’, ‘sass’ are not available for package ‘bslib’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/bslib’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘igraph’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/igraph’
+ERROR: dependencies ‘rlang’, ‘vctrs’ are not available for package ‘blob’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/blob’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘tidyselect’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tidyselect’
+ERROR: dependencies ‘lifecycle’, ‘systemfonts’ are not available for package ‘textshaping’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/textshaping’
+ERROR: dependencies ‘cli’, ‘memoise’, ‘rlang’ are not available for package ‘conflicted’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/conflicted’
+ERROR: dependencies ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘hms’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/hms’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘pillar’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/pillar’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘vctrs’ are not available for package ‘purrr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/purrr’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘stringi’, ‘vctrs’ are not available for package ‘stringr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/stringr’
+ERROR: dependency ‘hms’ is not available for package ‘progress’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/progress’
+ERROR: dependencies ‘bslib’, ‘fontawesome’, ‘htmltools’, ‘jquerylib’, ‘jsonlite’, ‘tinytex’ are not available for package ‘rmarkdown’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/rmarkdown’
+ERROR: dependency ‘stringr’ is not available for package ‘selectr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/selectr’
+ERROR: dependencies ‘lifecycle’, ‘pillar’, ‘rlang’, ‘vctrs’ are not available for package ‘tibble’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tibble’
+ERROR: dependencies ‘systemfonts’, ‘textshaping’ are not available for package ‘ragg’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/ragg’
+ERROR: dependencies ‘htmltools’, ‘rmarkdown’ are not available for package ‘htmlwidgets’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/htmlwidgets’
+ERROR: dependency ‘tibble’ is not available for package ‘cellranger’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/cellranger’
+ERROR: dependency ‘tibble’ is not available for package ‘rematch2’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/rematch2’
+ERROR: dependencies ‘cli’, ‘hms’, ‘lifecycle’, ‘rlang’, ‘tibble’, ‘tidyselect’, ‘tzdb’, ‘vctrs’, ‘progress’ are not available for package ‘vroom’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/vroom’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘pillar’, ‘rlang’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘dplyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/dplyr’
+ERROR: dependencies ‘cli’, ‘lifecycle’, ‘rlang’, ‘tibble’ are not available for package ‘forcats’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/forcats’
+ERROR: dependencies ‘cli’, ‘gargle’, ‘httr’, ‘lifecycle’, ‘pillar’, ‘purrr’, ‘rlang’, ‘tibble’, ‘vctrs’ are not available for package ‘googledrive’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/googledrive’
+ERROR: dependencies ‘fs’, ‘lifecycle’, ‘rlang’, ‘rmarkdown’ are not available for package ‘reprex’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/reprex’
+ERROR: dependencies ‘httr’, ‘lifecycle’, ‘rlang’, ‘selectr’, ‘tibble’, ‘xml2’ are not available for package ‘rvest’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/rvest’
+ERROR: dependencies ‘gtable’, ‘lifecycle’, ‘rlang’, ‘scales’, ‘tibble’, ‘vctrs’ are not available for package ‘ggplot2’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/ggplot2’
+ERROR: dependencies ‘htmlwidgets’, ‘htmltools’ are not available for package ‘visNetwork’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/visNetwork’
+ERROR: dependencies ‘dplyr’, ‘lifecycle’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘dtplyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/dtplyr’
+ERROR: dependencies ‘cellranger’, ‘gargle’, ‘googledrive’, ‘httr’, ‘ids’, ‘lifecycle’, ‘purrr’, ‘rematch2’, ‘tibble’, ‘vctrs’ are not available for package ‘googlesheets4’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/googlesheets4’
+ERROR: dependencies ‘hms’, ‘lifecycle’, ‘tibble’, ‘vroom’, ‘tzdb’ are not available for package ‘readr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/readr’
+ERROR: dependencies ‘cellranger’, ‘tibble’, ‘progress’ are not available for package ‘readxl’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/readxl’
+ERROR: dependencies ‘cli’, ‘dplyr’, ‘purrr’, ‘stringr’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘tidyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tidyr’
+ERROR: dependencies ‘dplyr’, ‘htmltools’, ‘htmlwidgets’, ‘igraph’, ‘purrr’, ‘readr’, ‘cli’, ‘scales’, ‘stringr’, ‘tibble’, ‘tidyr’, ‘visNetwork’ are not available for package ‘DiagrammeR’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/DiagrammeR’
+ERROR: dependencies ‘dplyr’, ‘purrr’, ‘stringr’, ‘tibble’, ‘tidyr’ are not available for package ‘broom’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/broom’
+ERROR: dependencies ‘blob’, ‘cli’, ‘dplyr’, ‘pillar’, ‘purrr’, ‘tibble’, ‘tidyr’, ‘tidyselect’, ‘vctrs’ are not available for package ‘dbplyr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/dbplyr’
+ERROR: dependencies ‘cli’, ‘forcats’, ‘hms’, ‘readr’, ‘tibble’, ‘tidyselect’, ‘vctrs’ are not available for package ‘haven’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/haven’
+ERROR: dependencies ‘broom’, ‘purrr’, ‘tibble’, ‘tidyr’, ‘tidyselect’, ‘vctrs’ are not available for package ‘modelr’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/modelr’
+ERROR: dependencies ‘data.tree’, ‘DiagrammeR’ are not available for package ‘randomForestSRC’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/randomForestSRC’
+ERROR: dependencies ‘broom’, ‘conflicted’, ‘cli’, ‘dbplyr’, ‘dplyr’, ‘dtplyr’, ‘forcats’, ‘ggplot2’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘hms’, ‘httr’, ‘lubridate’, ‘modelr’, ‘pillar’, ‘purrr’, ‘ragg’, ‘readr’, ‘readxl’, ‘reprex’, ‘rvest’, ‘stringr’, ‘tibble’, ‘tidyr’, ‘xml2’ are not available for package ‘tidyverse’
+* removing ‘/home/mnt/weka/xwang1/R/x86_64-pc-linux-gnu-library/4.4/tidyverse’
+
+The downloaded source packages are in
+	‘/mnt/tmp/471736.124.short.q/RtmpGuMMgG/downloaded_packages’
+Using 100 trees...
+
+      cox.bnd       aft.bnd       pow.bnd       por.bnd penghuang.bnd 
+          234             0             0          3712          3712 
+       rf.bnd       our.bnd 
+            0             0 
+[1] "Coverage for cox.bnd:0.841056034482759"
+[1] "Coverage for aft.bnd:0.879310344827586"
+[1] "Coverage for pow.bnd:0.899784482758621"
+[1] "Coverage for por.bnd:0"
+[1] "Coverage for penghuang.bnd:0"
+[1] "Coverage for rf.bnd:0.905711206896552"
+[1] "Coverage for our.bnd:0.897090517241379"
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 0.8410560 0.8793103 0.8997845 0.0000000 0.0000000 0.9057112 0.8970905
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'output_July8/July8_coverage_seed_124.csv': No such file or directory
+Execution halted

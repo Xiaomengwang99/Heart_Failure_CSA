@@ -1,0 +1,447 @@
+  subject_id  hadm_id           admittime           dischtime deathtime
+1   10000980 26913865 2189-06-27 07:38:00 2189-07-03 03:00:00        NA
+2   10002013 23581541 2160-05-18 07:45:00 2160-05-23 13:30:00        NA
+3   10002428 23473524 2156-05-11 14:49:00 2156-05-22 14:16:00        NA
+4   10002430 26295318 2129-06-13 00:00:00 2129-06-24 16:01:00        NA
+5   10002495 24982426 2141-05-22 20:17:00 2141-05-29 17:41:00        NA
+6   10002760 28094813 2141-04-20 07:15:00 2141-04-24 13:31:00        NA
+  insurance language marital_status  race              intime
+1  Medicare  ENGLISH        MARRIED Black 2189-06-27 08:42:00
+2  Medicare  ENGLISH         SINGLE Other 2160-05-18 10:00:53
+3  Medicare  ENGLISH        WIDOWED White 2156-05-11 14:49:34
+4  Medicare  ENGLISH        WIDOWED White 2129-06-13 00:43:08
+5  Medicare  ENGLISH        MARRIED Other 2141-05-22 20:18:01
+6     Other  ENGLISH                Other 2141-04-20 13:20:46
+              outtime        los                               first_careunit
+1 2189-06-27 20:38:27  0.4975347           Medical Intensive Care Unit (MICU)
+2 2160-05-19 17:33:33  1.3143519 Cardiac Vascular Intensive Care Unit (CVICU)
+3 2156-05-22 14:16:46 10.9772222          Surgical Intensive Care Unit (SICU)
+4 2129-06-15 22:51:40  2.9225926                     Coronary Care Unit (CCU)
+5 2141-05-27 22:24:02  5.0875116                     Coronary Care Unit (CCU)
+6 2141-04-21 14:26:49  1.0458681 Cardiac Vascular Intensive Care Unit (CVICU)
+                                 last_careunit gender anchor_age anchor_year
+1           Medical Intensive Care Unit (MICU)      F         73        2186
+2 Cardiac Vascular Intensive Care Unit (CVICU)      F         53        2156
+3           Medical Intensive Care Unit (MICU)      F         80        2155
+4                     Coronary Care Unit (CCU)      M         86        2125
+5                     Coronary Care Unit (CCU)      M         81        2141
+6 Cardiac Vascular Intensive Care Unit (CVICU)      M         56        2141
+  anchor_year_group        dod dischtime_since_admission dod_since_disch
+1       2008 - 2010 2193-08-26                  5.806944       1514.8750
+2       2008 - 2010                             5.239583              NA
+3       2011 - 2013                            10.977083              NA
+4       2014 - 2016 2130-01-11                 11.667361        200.3326
+5       2014 - 2016                             6.891667              NA
+6       2008 - 2010                             4.261111              NA
+  censoring_time has_type1_diabetes has_type2_diabetes has_hypertension
+1            365              False               True            False
+2            365              False               True             True
+3            365              False              False             True
+4            365              False              False             True
+5            365              False              False             True
+6            365              False              False            False
+  has_atrial_fibrillation has_copd has_asthma has_liver_disease
+1                   False     True      False             False
+2                   False     True      False             False
+3                   False    False      False             False
+4                   False    False      False             False
+5                   False    False      False             False
+6                   False    False      False             False
+  has_chronic_kidney_disease has_cancer has_depression has_osteoarthritis
+1                      False      False          False              False
+2                      False      False           True              False
+3                      False      False          False              False
+4                      False      False          False              False
+5                      False      False          False              False
+6                      False      False          False              False
+  has_anemia prev_HF Insulin X0.9..Sodium.Chloride Sodium.Chloride.0.9...Flush
+1      False   False    True                 False                        True
+2      False   False    True                  True                        True
+3      False   False    True                  True                        True
+4      False   False   False                  True                        True
+5      False   False    True                  True                        True
+6      False   False    True                  True                        True
+  Potassium.Chloride Acetaminophen Heparin X5..Dextrose Docusate.Sodium
+1               True          True    True         True            True
+2               True          True    True         True            True
+3               True          True    True         True            True
+4               True          True    True         True            True
+5               True          True    True         True           False
+6               True          True   False         True            True
+  Magnesium.Sulfate HYDROmorphone..Dilaudid.   Bag Iso.Osmotic.Dextrose
+1              True                    False  True                False
+2              True                    False  True                 True
+3              True                    False  True                 True
+4             False                    False False                 True
+5              True                     True  True                False
+6              True                     True False                False
+  Metoprolol.Tartrate Senna Ondansetron Vancomycin Bisacodyl
+1                True  True       False      False     False
+2                True  True        True       True      True
+3               False  True        True       True      True
+4               False  True       False      False     False
+5                True False       False      False     False
+6                True False        True      False      True
+  Sodium.Chloride.0.9. Lactated.Ringers Morphine.Sulfate Aspirin Lorazepam
+1                 True            False            False    True     False
+2                 True             True             True    True     False
+3                 True             True             True   False      True
+4                False             True             True    True     False
+5                 True            False             True   False      True
+6                False            False             True    True     False
+  OxycoDONE..Immediate.Release. Dextrose.50. Calcium.Gluconate Pantoprazole
+1                         False         True             False         True
+2                          True         True              True         True
+3                          True         True             False         True
+4                          True        False             False        False
+5                         False         True              True        False
+6                         False         True              True        False
+  Glucagon    SW Heparin.Sodium X0.9..Sodium.Chloride..Mini.Bag.Plus.
+1     True False           True                                  True
+2     True  True           True                                  True
+3     True  True          False                                  True
+4    False  True           True                                 False
+5     True  True           True                                 False
+6     True  True          False                                 False
+  OxyCODONE..Immediate.Release. Omeprazole  Vial Atorvastatin
+1                         False      False  True         True
+2                          True       True  True         True
+3                         False       True False        False
+4                         False       True False        False
+5                         False       True False         True
+6                         False      False False        False
+  Polyethylene.Glycol    NS Sterile.Water Heparin.Flush..10.units.ml.
+1                True False         False                       False
+2               False  True          True                        True
+3               False  True          True                        True
+4                True False         False                       False
+5               False  True         False                       False
+6               False False         False                       False
+  PredniSONE Gabapentin Glucose.Gel Albuterol.0.083..Neb.Soln Calcium.Carbonate
+1       True       True        True                      True             False
+2      False       True        True                      True             False
+3      False      False       False                      True              True
+4      False      False       False                     False             False
+5      False       True        True                     False             False
+6      False      False       False                     False             False
+  Levothyroxine.Sodium
+1                False
+2                False
+3                 True
+4                False
+5                False
+6                False
+  Potassium.Chloride.Replacement..Critical.Care.and.Oncology. DiphenhydrAMINE
+1                                                       False           False
+2                                                       False            True
+3                                                       False           False
+4                                                        True           False
+5                                                        True           False
+6                                                       False           False
+  Influenza.Vaccine.Quadrivalent Acetaminophen.IV D5.1.2NS Multivitamins   D5W
+1                           True            False    False          True False
+2                           True             True     True         False  True
+3                          False             True     True          True  True
+4                           True             True    False         False False
+5                           True             True    False         False  True
+6                          False            False    False         False  True
+  LORazepam Metoprolol.Succinate.XL Neutra.Phos Influenza.Virus.Vaccine
+1     False                   False       False                    True
+2     False                    True       False                    True
+3     False                   False        True                   False
+4     False                   False       False                   False
+5     False                    True       False                   False
+6     False                   False       False                   False
+  Vitamin.D Milk.of.Magnesia Propofol Famotidine CefePIME Ibuprofen Simvastatin
+1      True             True    False      False    False     False        True
+2      True             True     True      False     True      True        True
+3      True             True     True       True     True     False       False
+4      True            False    False      False    False     False       False
+5     False            False    False      False    False     False       False
+6     False             True     True      False    False     False        True
+  Ketorolac Fentanyl.Citrate Tacrolimus Ranitidine HydrALAzine
+1     False            False      False       True        True
+2      True            False      False       True        True
+3     False             True      False      False       False
+4     False            False      False      False       False
+5     False            False      False      False        True
+6      True            False      False       True       False
+  Enoxaparin.Sodium Lactulose    LR FoLIC.Acid Amiodarone Ciprofloxacin.HCl
+1             False      True False      False      False             False
+2             False     False False      False      False              True
+3              True     False False      False      False             False
+4             False     False False      False       True             False
+5             False     False False      False      False             False
+6             False     False  True      False      False             False
+  Labetalol Simethicone Haloperidol Piperacillin.Tazobactam Metoclopramide
+1     False       False       False                   False          False
+2     False        True       False                   False           True
+3     False       False       False                    True          False
+4     False        True       False                    True          False
+5     False       False       False                   False          False
+6     False       False       False                   False           True
+  Dexamethasone Sodium.Bicarbonate Amlodipine Clopidogrel Diazepam
+1         False               True      False        True    False
+2         False               True      False        True    False
+3         False              False      False       False    False
+4         False              False      False       False    False
+5         False              False      False        True    False
+6         False              False      False       False    False
+  Ipratropium.Bromide.Neb Potassium.Chl.20.mEq...1000.mL.D5.1.2.NS
+1                    True                                    False
+2                   False                                    False
+3                    True                                     True
+4                   False                                    False
+5                    True                                    False
+6                   False                                    False
+  Albuterol.Inhaler TraZODone MetRONIDAZOLE..FLagyl. CefazoLIN Thiamine
+1             False      True                  False     False    False
+2              True      True                  False      True    False
+3             False     False                   True      True    False
+4             False     False                  False     False    False
+5             False      True                   True     False    False
+6             False     False                  False      True    False
+  Prochlorperazine Oxycodone.Acetaminophen Magnesium.Oxide Diltiazem  Soln
+1            False                   False            True     False False
+2            False                    True            True     False  True
+3            False                   False           False     False  True
+4            False                   False           False     False  True
+5            False                   False           False     False False
+6            False                    True           False     False False
+  Lidocaine.5..Patch Albumin.25...12.5g...50mL. ACE.Inhibitor Beta.Blocker
+1              False                      False          True         True
+2               True                      False          True        False
+3              False                       True          True        False
+4              False                      False         False        False
+5              False                      False         False        False
+6              False                      False         False        False
+  Diuretic Anticoagulant
+1     True          True
+2     True         False
+3     True         False
+4     True          True
+5     True          True
+6     True          True
+  [1] "insurance"                                                  
+  [2] "language"                                                   
+  [3] "marital_status"                                             
+  [4] "los"                                                        
+  [5] "gender"                                                     
+  [6] "anchor_age"                                                 
+  [7] "race"                                                       
+  [8] "first_careunit"                                             
+  [9] "last_careunit"                                              
+ [10] "has_type1_diabetes"                                         
+ [11] "has_type2_diabetes"                                         
+ [12] "has_hypertension"                                           
+ [13] "has_atrial_fibrillation"                                    
+ [14] "has_copd"                                                   
+ [15] "has_asthma"                                                 
+ [16] "has_liver_disease"                                          
+ [17] "has_chronic_kidney_disease"                                 
+ [18] "has_cancer"                                                 
+ [19] "has_depression"                                             
+ [20] "has_anemia"                                                 
+ [21] "prev_HF"                                                    
+ [22] "Insulin"                                                    
+ [23] "X0.9..Sodium.Chloride"                                      
+ [24] "Sodium.Chloride.0.9...Flush"                                
+ [25] "Potassium.Chloride"                                         
+ [26] "Acetaminophen"                                              
+ [27] "Heparin"                                                    
+ [28] "X5..Dextrose"                                               
+ [29] "Docusate.Sodium"                                            
+ [30] "Magnesium.Sulfate"                                          
+ [31] "HYDROmorphone..Dilaudid."                                   
+ [32] "Bag"                                                        
+ [33] "Iso.Osmotic.Dextrose"                                       
+ [34] "Metoprolol.Tartrate"                                        
+ [35] "Senna"                                                      
+ [36] "Ondansetron"                                                
+ [37] "Vancomycin"                                                 
+ [38] "Bisacodyl"                                                  
+ [39] "Sodium.Chloride.0.9."                                       
+ [40] "Lactated.Ringers"                                           
+ [41] "Morphine.Sulfate"                                           
+ [42] "Aspirin"                                                    
+ [43] "Lorazepam"                                                  
+ [44] "OxycoDONE..Immediate.Release."                              
+ [45] "Dextrose.50."                                               
+ [46] "Calcium.Gluconate"                                          
+ [47] "Pantoprazole"                                               
+ [48] "Glucagon"                                                   
+ [49] "SW"                                                         
+ [50] "Heparin.Sodium"                                             
+ [51] "X0.9..Sodium.Chloride..Mini.Bag.Plus."                      
+ [52] "OxyCODONE..Immediate.Release."                              
+ [53] "Omeprazole"                                                 
+ [54] "Vial"                                                       
+ [55] "Atorvastatin"                                               
+ [56] "Polyethylene.Glycol"                                        
+ [57] "NS"                                                         
+ [58] "Sterile.Water"                                              
+ [59] "Heparin.Flush..10.units.ml."                                
+ [60] "PredniSONE"                                                 
+ [61] "Gabapentin"                                                 
+ [62] "Glucose.Gel"                                                
+ [63] "Albuterol.0.083..Neb.Soln"                                  
+ [64] "Calcium.Carbonate"                                          
+ [65] "Levothyroxine.Sodium"                                       
+ [66] "Potassium.Chloride.Replacement..Critical.Care.and.Oncology."
+ [67] "DiphenhydrAMINE"                                            
+ [68] "Influenza.Vaccine.Quadrivalent"                             
+ [69] "Acetaminophen.IV"                                           
+ [70] "D5.1.2NS"                                                   
+ [71] "Multivitamins"                                              
+ [72] "D5W"                                                        
+ [73] "LORazepam"                                                  
+ [74] "Metoprolol.Succinate.XL"                                    
+ [75] "Neutra.Phos"                                                
+ [76] "Influenza.Virus.Vaccine"                                    
+ [77] "Vitamin.D"                                                  
+ [78] "Milk.of.Magnesia"                                           
+ [79] "Propofol"                                                   
+ [80] "Famotidine"                                                 
+ [81] "CefePIME"                                                   
+ [82] "Ibuprofen"                                                  
+ [83] "Simvastatin"                                                
+ [84] "Ketorolac"                                                  
+ [85] "Fentanyl.Citrate"                                           
+ [86] "Tacrolimus"                                                 
+ [87] "Ranitidine"                                                 
+ [88] "HydrALAzine"                                                
+ [89] "Enoxaparin.Sodium"                                          
+ [90] "Lactulose"                                                  
+ [91] "LR"                                                         
+ [92] "FoLIC.Acid"                                                 
+ [93] "Amiodarone"                                                 
+ [94] "Ciprofloxacin.HCl"                                          
+ [95] "Labetalol"                                                  
+ [96] "Simethicone"                                                
+ [97] "Haloperidol"                                                
+ [98] "Piperacillin.Tazobactam"                                    
+ [99] "Metoclopramide"                                             
+[100] "Dexamethasone"                                              
+[101] "Sodium.Bicarbonate"                                         
+[102] "Amlodipine"                                                 
+[103] "Clopidogrel"                                                
+[104] "Diazepam"                                                   
+[105] "Ipratropium.Bromide.Neb"                                    
+[106] "Potassium.Chl.20.mEq...1000.mL.D5.1.2.NS"                   
+[107] "Albuterol.Inhaler"                                          
+[108] "TraZODone"                                                  
+[109] "MetRONIDAZOLE..FLagyl."                                     
+[110] "CefazoLIN"                                                  
+[111] "Thiamine"                                                   
+[112] "Prochlorperazine"                                           
+[113] "Oxycodone.Acetaminophen"                                    
+[114] "Magnesium.Oxide"                                            
+[115] "Diltiazem"                                                  
+[116] "Soln"                                                       
+[117] "Lidocaine.5..Patch"                                         
+[118] "Albumin.25...12.5g...50mL."                                 
+[119] "ACE.Inhibitor"                                              
+[120] "Beta.Blocker"                                               
+[121] "Diuretic"                                                   
+[122] "Anticoagulant"                                              
+[1] "Iteration:1"
+Compute the result of Cox...[1] 100
+[1] 200
+[1] 300
+[1] 400
+[1] 500
+[1] 600
+[1] 700
+[1] 800
+[1] 900
+[1] 1000
+[1] 1100
+[1] 1200
+[1] 1300
+[1] 1400
+[1] 1500
+[1] 1600
+[1] 1700
+[1] 1800
+[1] 1900
+[1] 2000
+[1] 2100
+[1] 2200
+[1] 2300
+[1] 2400
+[1] 2500
+[1] 2600
+[1] 2700
+[1] 2800
+[1] 2900
+[1] 3000
+[1] 3100
+[1] 3200
+[1] 3300
+[1] 3400
+[1] 3500
+[1] 3600
+[1] 3700
+Done.
+Compute the result of AFT...Done.
+Compute the result of powell...Done.
+Compute the result of portnoy...Done.
+Compute the result of Peng and Huang...Done.
+Compute the result of random forest...[1] "checkpoint1"
+[1] "r =  100"
+[1] "r =  200"
+[1] "r =  300"
+[1] "r =  400"
+[1] "r =  500"
+[1] "r =  600"
+[1] "r =  700"
+[1] "r =  800"
+[1] "r =  900"
+[1] "r =  1000"
+[1] "r =  1100"
+[1] "r =  1200"
+[1] "r =  1300"
+[1] "r =  1400"
+[1] "r =  1500"
+[1] "r =  1600"
+[1] "r =  1700"
+[1] "r =  1800"
+[1] "r =  1900"
+[1] "r =  2000"
+[1] "r =  2100"
+[1] "r =  2200"
+[1] "r =  2300"
+[1] "r =  2400"
+[1] "r =  2500"
+[1] "r =  2600"
+[1] "r =  2700"
+[1] "r =  2800"
+[1] "r =  2900"
+[1] "r =  3000"
+[1] "r =  3100"
+[1] "r =  3200"
+[1] "r =  3300"
+[1] "r =  3400"
+[1] "r =  3500"
+[1] "r =  3600"
+[1] "r =  3700"
+[1] "checkpoint3"
+Done.
+Using 100 trees...
+
+
+Using 100 trees...
+
+      cox.bnd       aft.bnd       pow.bnd       por.bnd penghuang.bnd 
+          305             0             0             0          3712 
+       rf.bnd       our.bnd 
+            0             0 
+[1] "Coverage for cox.bnd:0.870150862068966"
+[1] "Coverage for aft.bnd:0.953933189655172"
+[1] "Coverage for pow.bnd:0.945043103448276"
+[1] "Coverage for por.bnd:0.942887931034483"
+[1] "Coverage for penghuang.bnd:0"
+[1] "Coverage for rf.bnd:0.95770474137931"
+[1] "Coverage for our.bnd:0.943426724137931"
+There were 50 or more warnings (use warnings() to see the first 50)
+[1] 0.8701509 0.9539332 0.9450431 0.9428879 0.0000000 0.9577047 0.9434267

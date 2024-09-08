@@ -1,0 +1,8 @@
+#!/bin/bash
+#$ -N HF
+#$ -j y
+#$ -t 1-250
+#$ -o output_July8/$JOB_ID-$TASK_ID.log
+
+module load R/4.3.1
+Rscript HF_Survival.r

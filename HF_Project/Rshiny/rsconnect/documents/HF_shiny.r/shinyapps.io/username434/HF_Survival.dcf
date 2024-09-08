@@ -1,0 +1,12 @@
+name: HF_Survival
+title: HF_Survival
+username: username434
+account: username434
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12632782
+bundleId: 9071352
+url: https://username434.shinyapps.io/HF_Survival/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
